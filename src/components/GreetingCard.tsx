@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import innoImage from '../assets/inno.jpeg';
 
 export const GreetingCard: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ export const GreetingCard: React.FC = () => {
         >
           <div className="absolute inset-0 bg-[#44624A]/30 rounded-full blur-xl animate-pulse"></div>
           <img 
-            src="src/assets/inno.jpeg" 
+            src={innoImage} 
             alt="Profile Picture" 
             className="w-full h-full object-cover rounded-full border-4 border-[#44624A] shadow-lg relative z-10 bg-white"
           />
