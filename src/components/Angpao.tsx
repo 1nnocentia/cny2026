@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Flame } from 'lucide-react';
 
 interface AngpaoProps {
   onClick: () => void;
@@ -46,18 +45,10 @@ export const Angpao: React.FC<AngpaoProps> = ({ onClick }) => {
             transition={{ repeat: Infinity, duration: 3 }}
           >
             <div className="relative text-center flex flex-col items-center justify-center w-full h-full rounded-full overflow-hidden bg-red-900/10">
-              
-              {/* Fire Animation Background */}
-              <div className="absolute inset-0 flex items-end justify-center opacity-30">
-                 <Flame className="w-20 h-20 text-orange-500 fill-orange-500 animate-pulse blur-sm" />
-              </div>
 
-              {/* Horse Emoji + Fire Icon Composition */}
+              {/* Horse Emoji */}
               <div className="relative z-10 flex flex-col items-center">
                 <span className="text-5xl filter drop-shadow-lg transform -translate-y-1">🐎</span>
-                <div className="absolute -bottom-1 right-4 text-orange-500 animate-bounce">
-                    <Flame size={16} fill="currentColor" />
-                </div>
               </div>
 
               {/* Text Ring */}

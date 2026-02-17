@@ -9,6 +9,8 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
